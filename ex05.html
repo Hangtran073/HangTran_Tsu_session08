@@ -6,7 +6,9 @@
         <tittle></tittle>
         <link ref="styleSheet" href="">
         <style>
-            * {}
+            * {
+                flex-wrap:wrap;
+            }
 
             .header {
                 position: relative;
@@ -148,6 +150,19 @@
                 align-items: center;
                 background: linear-gradient(to right);
 
+            }
+            @media (max-width:480px) {
+                .content,
+                .footer,
+                .header
+                .boxright
+                {
+                    width:500px;
+                  
+                    
+                }
+                
+                
             }
         </style>
 
