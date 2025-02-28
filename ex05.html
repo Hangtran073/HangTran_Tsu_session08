@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <tittle></tittle>
+        <link ref="styleSheet" href="">
+        <style>
+            * {}
+
+            .header {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            .header1 {
+                display: flex;
+                align-items: center;
+                padding-left: 700px;
+                gap: 20px;
+                padding-right: 30px;
+                flex-direction: row;
+                justify-content: space-around;
+
+
+            }
+
+            .badge {
+                position: relative;
+                top: -20px;
+                left: -20px;
+                background-color: red;
+                color: white;
+                font-size: 5px;
+                font-weight: bold;
+                padding: 3px 6px;
+                border-radius: 50%;
+            }
+
+            .content {
+                background-color: hwb(0 98% 1%);
+                padding-left: 60px;
+                padding-right: 250px;
+                width: 900px;
+
+
+
+            }
+
+            a {
+                margin-right: 5px;
+                text-decoration: none;
+                font-size: 12px;
+                color: black;
+
+            }
+
+            input.box {
+                background-color: #F4F5F6;
+                border-radius: 5px;
+                border: none;
+                width: 300px;
+                height: 40px;
+            }
+
+            .but {
+                width: 85px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid rgb(217, 209, 209);
+                border-radius: 10px;
+            }
+
+            .cardparent {
+                display: flex;
+                gap: 10px;
+                border-radius: 10px;
+            }
+
+            .card {
+                width: 250px;
+                height: 80px;
+                padding-left: 20px;
+                padding-top: 60px;
+                border-radius: 10px;
+
+
+            }
+
+            .expiry {
+
+                display: flex;
+                gap: 30px;
+                padding-left: 50px;
+
+                .date {
+                    width: 120px;
+                    height: 25px;
+                    border: 1px solid #CED9FD;
+                    border-radius: 10px;
+
+
+
+
+                }
+            }
+
+            .box {
+                background-color: #CED9FD;
+            }
+
+            .check {
+                display: flex;
+                gap: 50px;
+
+            }
+
+            .boxright {
+                border: 1px solid rgb(217, 209, 209);
+                width: 350px;
+                height: 600px;
+                background-color: white;
+                padding-left: 20px;
+                margin-top: 40px;
+                font-size: 12px;
+                border-radius: 10px;
+
+            }
+
+            .colright {}
+
+            .center {
+                display: flex;
+                gap: 20px;
+            }
+
+            .footer {
+                background-color: rgb(87, 87, 224);
+                color: white;
+                padding-left: 50px;
+                border-radius: 10px
+            }
+
+            .subscribe {
+                display: flex;
+                align-items: center;
+                background: linear-gradient(to right);
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="header">
+            <h3 style="padding-left: 30px;">✈️ TripGuide</h3>
+
+            <div class="header1">
+                <div class="hleft" style="display:flex;border-right: 1px solid black; gap:20px">
+                    <span>USD</span>
+                    <img src="/us-flag.jpg" style="width:30px;height:30px; border-radius: 50%;">
+                    <div class="noti">
+                        <img src="/bell icon.jpg" style="width:25px;height:25px">
+                        <span class="badge">1</span>
+                    </div>
+                </div>
+                <div class="hright">
+
+                    <div class="profile">
+                        <img src="/imagic/ảnh 3.png" style="width:30px;height:30px;border-radius: 50%;">
+
+                        <span>Delowar</span>
+                        <span class="dropdown">▾</span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="mid">
+                <a href="">Home</a>
+                <span>></span>
+                <a href="">Hotel</a>
+                <span>></span>
+                <a href="">Hotel Details</a>
+                <span>></span>
+                <span style="color:hwb(0 60% 38%)">Confirm and pay</span>
+            </div>
+            <div class="center">
+                <div>
+                    <h1>Confirm your Book</h1>
+                    <hr />
+                    <h2>Your tour</h2>
+                    <input type="date" value="27/04/2020" placeholder="Date" class="box"><br /><br />
+                    <input type="text" placeholder="Traveller" value="1 Passenger" class="box"><br />
+                    <h2>Creadit Cards</h2>
+                    <div style="margin-left:0px;">
+                        <div>
+                            <button class="but">mactercard</button>
+                            <button class="but"><i>Paypal</i></button>
+                            <button class="but"><i>VISA</i></button>
+                            <button class="but" style="font-size: 12px;">AMERICAN EXPRESS</button>
+                        </div> <br />
+                        <hr /><br />
+                        <div class="cardparent">
+                            <div class="card" style="background-color: #CED9FD;">
+                                <p>8948 xxxx xxxx 7894</p>
+                                <p>Holder Name</p>
+                            </div>
+                            <div class="card" style="background-color:#BDDBA6 ;">
+                                <p>8948 xxxx xxxx 7894</p>
+                                <p>Holder Name</p>
+                            </div>
+
+                        </div><br />
+                        <label for="">Card Number</label><br /><br />
+                        <input class="box" type="text" value="5884 6241 4444 3333"><br /><br />
+                        <div class="expiry" style="margin-left: -80px;"><br />
+                            <div><label for="">Expiry Date</label><br />
+                                <input type="date" class="date">
+                            </div>
+                            <div><label for="">CVC/CVV </label><br />
+                                <input type="password" class="date">
+                            </div>
+                        </div><br />
+                        <input type="checkbox"><span>Save Card</span><br /><br />
+                        <button
+                            style="background-color: rgb(84, 84, 236); width:120px;color:white;border:none;border-radius: 15px;">
+                            Confirm and reserve</button>
+
+                    </div>
+                </div>
+                <div class="boxright">
+                    <h4>Switzerland Hotel and Places to Stay</h4>
+                    <p>⭐ 4.8 (122 review)</p>
+                    <img src="/session08/daniel-corneschi-N6HTCyN50p0-unsplash 1 (2).png"
+                        style="width:250px;height:120px">
+                    <p>1 bedroom + 1 private room</p>
+
+                    <div class="check">
+                        <div
+                            style="border-right: 1px solid black; padding-right: 50px; border-top:  1px solid black; border-radius: 10px;">
+                            <p>Check in</p>
+                            <p>Jun 27, 2020</p>
+                        </div>
+                        <div>
+                            <p>Check out</p>
+                            <p>Jun 30, 2020</p>
+                        </div>
+                    </div>
+                    <p>Guest</p>
+                    <p>2 guest</p>
+                    <h2>Booked details</h2>
+                    <span>$119 + 5nights</span>
+                    <span class="colright" style="padding-left: 180px;">$833</span><br /><br />
+                    <span>Ocupancy text and fee</span>
+                    <span class="colright" style="padding-left: 130px;">-$125</span><br /><br />
+                    <span>Service free</span>
+                    <span class="colright" style="padding-left: 200px;">$103</span><br /><br />
+                    <div style="background-color: beige; height:40px">
+                        <span>Total</span>
+                        <span class="colright" style="padding-left: 245px;">$833</span>
+                    </div><br />
+                    <p style="text-align: center;">Report this property</p>
+
+
+                </div>
+            </div>
+            <div class="footer">
+
+                <div style="display:flex; padding-right: 50px;margin-top: 50px;;">
+                    <div>
+                        <h1>Get our pro offers</h1>
+                        <p style="padding-right: 210px; font-size: 12px;">Create a visual identity for your
+                            company, and an<br /> overall
+                            brand</p>
+                    </div>
+                    <div class="subscribe">
+                        <input type="email" placeholder="Type your email here" value=""
+                            style="width:300px;height:40px;margin-top:50px;">
+                        <button
+                            style="background-color: black;color:white; margin-left: -90px;margin-bottom: -50px; width:80px; height:30px">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div style="display:flex;gap:60px; padding-left: 70px; font-size: 12px;">
+                <div>
+                    <h4>✈️ TripGuide</h4>
+                    <p>This is the team that specializes in<br /> making sure in the find it a<br /> your
+                        interior looks
+                        cool</p>
+                    <div
+                        style="background-color: white;width:70px;height:25px;border-radius: 5px; display:flex;justify-content: space-around;align-items: center;">
+                        <span>☀</span>
+                        <span>☾</span>
+
+                    </div>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <p>Travel Booking</p>
+                    <p>Flight Booking</p>
+                    <p>Car Booking</p>
+                    <p> Fivestar Hotel</p>
+                    <p>Traveling</p>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <p>Account</p>
+                    <p>Legal</p>
+                    <p>Contact</p>
+                    <p>Terms & Condition</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div>
+                    <h4>Business</h4>
+                    <p>Success</p>
+                    <p>About Locato</p>
+                    <p>Blog</p>
+                    <p>Informmation</p>
+                    <p>Travel Guide</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </body>
+
+</html>
